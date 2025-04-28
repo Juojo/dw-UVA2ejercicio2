@@ -28,17 +28,22 @@
             <p>Le enviaremos un mail con los precios y link de pago. Si tiene alguna duda puede enviarnos un email a <a href="mailto:SuperGym@mail.com">SuperGym@mail.com</a> o acercarte a nuestro gimnasio.</p>
 
             <form>
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre" required>
             
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="ejemplo@email.com" required>
             
-                <label for="plan">Selecciona tu plan</label>
-                <select id="plan" name="plan" required>
-                    <option value="">-- Elige un plan --</option>
+                <label>Selecciona tu plan</label>
+                <select required>
                     <option value="basico">Básico (3 días/semana)</option>
                     <option value="avanzado">Avanzado (acceso ilimitado)</option>
+                </select>
+
+                <label>Selecciona tu horario</label>
+                <select required>
+                    <option value="basico">Mañana (07:00 - 12:00)</option>
+                    <option value="avanzado">Tarde (12:00 - 22:00)</option>
                 </select>
             
                 <button id="btn-form" type="submit">Registrarme</button>
