@@ -4,14 +4,58 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #eee
+    background-color: #eee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Nav */
+
+nav {
+    height: 50px;
+    background-color: #2c6fec;
+    height: aut;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;}
+
+.elemento-nav {
+    list-style: none;
+}
+
+.elemento-nav > a {
+    color: #fff;
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.elemento-nav:hover {
+    background-color: #fff;
+}
+
+.elemento-nav:hover > a {
+    color: #000;
+}
+
+/* Wrapper, tarjetas */
+
 .wrapper {
+    flex: 1;
     width: 60vw;
     margin: 0 auto;
+}
+
+header > h1 {
+    margin: 30px 0;
 }
 
 .planes > h2 {
@@ -54,4 +98,19 @@ body {
     color: #fff;
     cursor: pointer;
     transition: ease 300ms;
+}
+
+/* Footer */
+
+footer {
+    height: 50px;
+    background-color: #2c6fec;
+    margin-top: 25px;
+    bottom: 0px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
