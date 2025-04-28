@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Gym</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class="elemento-nav"><a href="../index.html">Inicio</a></li>
+            <li class="elemento-nav"><a href="./registro.html">Registro de nuevos miembros</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>Registro de nuevos miembros</h1>
+        </header>
+
+        <main>
+            <h2>Complete sus datos en el formulario</h2>
+
+            <p>Le enviaremos un mail con los precios y link de pago. Si tiene alguna duda puede enviarnos un email a <a href="mailto:SuperGym@mail.com">SuperGym@mail.com</a> o acercarte a nuestro gimnasio.</p>
+
+            <form>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+            
+                <label for="plan">Selecciona tu plan</label>
+                <select id="plan" name="plan" required>
+                    <option value="">-- Elige un plan --</option>
+                    <option value="basico">Básico (3 días/semana)</option>
+                    <option value="avanzado">Avanzado (acceso ilimitado)</option>
+                </select>
+            
+                <button id="btn-form" type="submit">Registrarme</button>
+            </form>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Alumno: Juan Martín Miñarro - <a href="https://github.com/Juojo/dw-UVA2ejercicio2" target="_blank" rel="noopener noreferrer">Repo de Github</a></p>
+    </footer>
+
+</body>
+</html>
